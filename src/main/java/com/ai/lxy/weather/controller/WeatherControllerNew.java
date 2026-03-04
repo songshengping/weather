@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestClient;
 
 import java.util.List;
-
+@CrossOrigin(origins = "*") // 开发阶段先这么写，生产别用*
 @RestController
 @RequestMapping("/api/weather")
 /**
